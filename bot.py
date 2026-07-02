@@ -8,7 +8,7 @@ def handle_message(message):
             bot.send_chat_action(message.chat.id, 'typing')
             
             response = ai_client.models.generate_content(
-                model='gemini-2.5-flash',
+                model='gemini-2.5-flash-lite'
                 contents=message.text,
             )
             
